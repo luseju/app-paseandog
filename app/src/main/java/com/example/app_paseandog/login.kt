@@ -12,7 +12,11 @@ class login : AppCompatActivity() {
     private lateinit var binding:ActivityLoginBinding
     override fun onCreate(savedInstanceState:Bundle?) {
         super.onCreate(savedInstanceState)
-        
+
+        binding.btnInicio.setOnClickListener{
+            startActivity(Intent(this,MainActivity::class.java))
+        }
+
         binding=ActivityLoginBinding.inflate(layoutInflater)
         val view=binding.root
         setContentView(view)
@@ -26,10 +30,6 @@ class login : AppCompatActivity() {
             else{
                 Toast.makeText(this,"Datos incorrectos",Toast.LENGTH_LONG).show()
             }
-        }
-
-        binding.btnInicio.setOnClickListener{
-            startActivity(Intent(this,MainActivity::class.java))
         }
     }
 }
