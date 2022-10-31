@@ -16,10 +16,6 @@ class MainActivity : AppCompatActivity() {
         val view=binding.root
         setContentView(view)
 
-        binding.btnInicio.setOnClickListener{
-            startActivity(Intent(this,MainActivity::class.java))
-        }
-
         binding.btnLogin.setOnClickListener{
             startActivity(Intent(this,login::class.java))
             Toast.makeText(this,"Clic en el botón Ingresar",Toast.LENGTH_LONG).show()
