@@ -5,16 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/color5"
-    tools:context=".registro">
+    tools:context=".login">
 
     <TextView
         android:id="@+id/iniciosesion"
         style="@style/titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:text="@string/registro"
+        android:layout_marginTop="136dp"
+        android:text="@string/iniciar_sesi_n"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtlogo" />
 
@@ -31,47 +32,19 @@
         app:srcCompat="@drawable/logo" />
 
     <EditText
-        android:id="@+id/usuario"
-        style="@style/formText"
-        android:layout_width="300dp"
-        android:layout_marginTop="48dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/nombres"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iniciosesion"
-        android:autofillHints="" />
-
-    <EditText
-        android:id="@+id/apellido"
-        android:layout_width="300dp"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/apellidos"
-        style="@style/formText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/usuario"
-        android:autofillHints="" />
-
-    <EditText
         android:id="@+id/email"
         style="@style/formText"
         android:layout_width="300dp"
+        android:layout_marginTop="48dp"
         android:autofillHints=""
         android:ems="10"
         android:inputType="textEmailAddress"
-        android:text="@string/correo_electr_nico"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/email"
+        android:labelFor="@id/email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/apellido"
-        app:layout_constraintVertical_bias="0.042" />
+        app:layout_constraintTop_toBottomOf="@+id/iniciosesion" />
 
     <EditText
         android:id="@+id/password"
@@ -81,18 +54,19 @@
         android:ems="10"
         android:hint="@string/contrasena"
         android:inputType="textPassword"
+        android:labelFor="@id/password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/telefono" />
+        app:layout_constraintTop_toBottomOf="@+id/email" />
 
     <Button
-        android:id="@+id/btnregistrar"
+        android:id="@+id/btnLogin"
         style="@style/signUpBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:text="@string/registrar"
+        android:text="@string/ingresar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -104,32 +78,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="PaseanDog"
+        android:text="@string/paseandog"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logoreg" />
-
-    <EditText
-        android:id="@+id/telefono"
-        style="@style/formText"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:inputType="number"
-        android:text="@string/tel_fono"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email" />
 
     <Button
         android:id="@+id/btnInicio"
         style="@style/inicioBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="664dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:text="Inicio"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.929"
-        app:layout_constraintStart_toEndOf="@+id/logoreg" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/logoreg"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

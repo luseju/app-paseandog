@@ -7,4 +7,10 @@
     <string name="correo_electr_nico">Correo Electrónico</string>
     <string name="contrasena">Contraseña</string>
     <string name="registrar">Registrar</string>
+    <string name="tel_fono">Teléfono</string>
+    <string name="paseandog">PaseanDog</string>
+    <string name="iniciar_sesi_n">Iniciar Sesión</string>
+    <string name="sesion">Iniciar Sesión</string>
+    <string name="email">Correo Electrónico</string>
+    <string name="ingresar">Ingresar</string>
 </resources>

@@ -46,6 +46,14 @@
         <item name="android:textAlignment">center</item>
     </style>
 
+    <style name="inicioBtn">
+        <item name="android:textColor">@color/color5</item>
+        <item name="android:backgroundTint">@color/color6</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
     <style name="formText">
         <item name="android:textColor">@color/color6</item>
         <item name="android:textSize">15dp</item>
