@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">app-paseandog</string>
+    <string name="nombres">Nombres</string>
+    <string name="registro">Registro</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="logo">logo</string>
+    <string name="correo_electr_nico">Correo Electrónico</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="registrar">Registrar</string>
+</resources>
