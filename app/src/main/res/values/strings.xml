@@ -13,4 +13,6 @@
     <string name="sesion">Iniciar Sesión</string>
     <string name="email">Correo Electrónico</string>
     <string name="ingresar">Ingresar</string>
+    <string name="paseandogtxt">PaseanDog</string>
+    <string name="inicio">Inicio</string>
 </resources>

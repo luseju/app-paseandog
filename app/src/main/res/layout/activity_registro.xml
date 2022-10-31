@@ -31,13 +31,14 @@
         app:srcCompat="@drawable/logo" />
 
     <EditText
-        android:id="@+id/usuario"
+        android:id="@+id/nombre"
         style="@style/formText"
         android:layout_width="300dp"
         android:layout_marginTop="48dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/nombres"
+        android:labelFor="@id/nombre"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
@@ -51,11 +52,12 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/apellidos"
+        android:labelFor="@id/apellido"
         style="@style/formText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/usuario"
+        app:layout_constraintTop_toBottomOf="@+id/nombre"
         android:autofillHints="" />
 
     <EditText
@@ -66,6 +68,7 @@
         android:ems="10"
         android:inputType="textEmailAddress"
         android:text="@string/correo_electr_nico"
+        android:labelFor="@id/email"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -104,7 +107,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="PaseanDog"
+        android:text="@string/paseandogtxt"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logoreg" />
 
@@ -118,14 +121,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email" />
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/btnInicio"
         style="@style/inicioBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Inicio"
+        android:text="@string/inicio"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.929"

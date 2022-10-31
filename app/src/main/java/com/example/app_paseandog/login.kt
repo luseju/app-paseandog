@@ -24,8 +24,17 @@ class login : AppCompatActivity() {
         binding.btnLogin.setOnClickListener {
             val user=binding.email.text.toString()
             val pass=binding.password.text.toString()
-            if (user=="pepe"&&pass=="123"){
+
+            if(user.isEmpty()&&pass.isEmpty()){
+                Toast.makeText(this,"Por favor completar todos los datos",Toast.LENGTH_LONG).show()
+                print("Datos inválidos")
+            }
+            else if(user.toString().length>3){
+                println("El usuario debe tener más de 2 caractéres")
+            }
+            else if (user=="pepe"&&pass=="123"){
                 startActivity(Intent(this,Email::class.java))
+                println("Correo y contraseña correctos")
             }
             else{
                 Toast.makeText(this,"Datos incorrectos",Toast.LENGTH_LONG).show()
