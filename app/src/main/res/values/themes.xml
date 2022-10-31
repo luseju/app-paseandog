@@ -53,4 +53,8 @@
         <item name="android:layout_height">48dp</item>
         <item name="android:layout_width">300dp</item>
     </style>
+
+    <style name="splashinicio" parent="Theme.Apppaseandog">
+        <item name="android:windowBackground">@drawable/splash</item>
+    </style>
 </resources>
